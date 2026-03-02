@@ -4,7 +4,7 @@ An e-commerce web application built with React, TypeScript, Vite, and Tailwind C
 
 ### Live Preview
 
-Check out the live demo here: [AwesomeBuy](https://codeyogi-lecture-85.netlify.app/)
+Check out the live demo here: [AwesomeBuy](https://codeyogi-lecture-86.netlify.app/)
 
 ### Implementation Notes
 
@@ -13,6 +13,7 @@ Check out the live demo here: [AwesomeBuy](https://codeyogi-lecture-85.netlify.a
 - **Robust Error Handling**: Comprehensive error handling for API calls and user interactions.
 - **Optimized Performance**: Improved state management and reduced unnecessary re-renders.
 - **Class Components**: Used class component for the product details page as assigned in the lecture 42 of CodeYogi. Wrapped it in a Functional Component passing hooks as props to it.
+- **Storybook**: Integrated storybook for component development.
 
 ## Features
 
@@ -49,7 +50,7 @@ Check out the live demo here: [AwesomeBuy](https://codeyogi-lecture-85.netlify.a
 ## 📁 Project Structure
 
 ```
-CodeYogi-Lecture-85/
+CodeYogi-Lecture-86/
 ├── public/                  # Static assets
 │   ├── images/
 │   └── _redirects           # Netlify redirects
@@ -116,8 +117,8 @@ CodeYogi-Lecture-85/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/lakshgupta8/CodeYogi-Lecture-85
-   cd "CodeYogi-Lecture-85"
+   git clone https://github.com/lakshgupta8/CodeYogi-Lecture-86
+   cd "CodeYogi-Lecture-86"
    ```
 
 2. **Install dependencies**
@@ -141,6 +142,8 @@ CodeYogi-Lecture-85/
 - `build` - Build for production
 - `preview` - Preview production build
 - `lint` - Run ESLint
+- `storybook` - Run storybook
+- `storybook:build` - Build storybook
 
 ## Authentication Flow
 
@@ -190,6 +193,22 @@ The application connects to a backend API for:
 - **Loading**: Loading state indicators
 - **Input**: Styled form input component
 - **UserRoute**: Authentication wrapper for protected routes
+- **AuthRoute**: Authentication wrapper for protected routes
+- **NoMatch**: 404 page
+- **NotFound**: 404 page
+- **Providers**: Context providers
+- **Footer**: Footer component
+- **Navbar**: Navbar component
+- **MobileMenu**: Mobile menu component
+- **CartDetails**: Cart details component
+- **CartList**: Cart list component
+- **CartRow**: Cart row component
+- **CartTotals**: Cart totals component
+- **EmptyCart**: Empty cart component
+- **Filter**: Filter component
+- **LoadingProduct**: Loading product component
+- **ProductGrid**: Product grid component
+- **Alert**: Alert component
 
 ## Configuration
 
@@ -220,6 +239,7 @@ Code quality maintained with ESLint and recommended React rules.
 - Vite for fast development
 - ESLint for code quality
 - Prettier for code formatting
+- Storybook for component development
 
 ## Contributing
 
@@ -235,7 +255,7 @@ This project is part of the CodeYogi Lecture series.
 
 ## Developer
 
-Created as part of CodeYogi Non-Assignment Lecture 85.
+Created as part of CodeYogi Non-Assignment Lecture 86.
 
 ---
 
