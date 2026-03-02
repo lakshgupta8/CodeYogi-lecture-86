@@ -1,9 +1,9 @@
-import { useState, useEffect, useCallback, useMemo, type FC } from "react";
+import { useState, useEffect, useCallback, useMemo, type FC, type ReactNode } from "react";
 import { UserContext } from "./UserContext";
 import { getAuthUser } from "../api";
 import { type User } from "../types";
 
-const UserProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
+const UserProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [token, setToken] = useState<string | null>(localStorage.getItem("token"));
   const [loading, setLoading] = useState<boolean>(true);

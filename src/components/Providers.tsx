@@ -1,9 +1,9 @@
-import { type FC } from "react";
+import type { FC, ReactNode } from "react";
 import CartProvider from "../context/CartProvider";
 import UserProvider from "../context/UserProvider";
 import AlertProvider from "../context/AlertProvider";
 
-const Providers: FC<{ children: React.ReactNode }> = ({ children }) => {
+const Providers: FC<{ children: ReactNode }> = ({ children }) => {
     return (
         <UserProvider>
             <CartProvider>

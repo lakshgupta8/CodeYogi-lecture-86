@@ -1,3 +1,4 @@
+import { type FC } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Providers from "./components/Providers";
 import Navbar from "./components/Navbar";
@@ -13,7 +14,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import ProductsPage from "./pages/ProductsPage";
 import SignUpPage from "./pages/SignUpPage";
 
-const App: React.FC = () => {
+const App: FC = () => {
   const location = useLocation();
 
   const isLoginPage =

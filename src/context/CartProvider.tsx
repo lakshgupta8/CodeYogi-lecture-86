@@ -1,10 +1,10 @@
-import { useState, useMemo, useCallback, useEffect, type FC } from "react";
+import { useState, useMemo, useCallback, useEffect, type FC, type ReactNode } from "react";
 import { getProduct, saveCart, getCart } from "../api";
 import { CartContext } from "./CartContext";
 import { useUser } from "./UserContext";
 import { type Product, type Cartitems } from "../types";
 
-const CartProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
+const CartProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const { isLoggedIn, token }: { isLoggedIn: boolean; token: string | null } = useUser();
   const [cartItems, setCartItems] = useState<Cartitems>(() => {
     const saved = localStorage.getItem("cartItems");
