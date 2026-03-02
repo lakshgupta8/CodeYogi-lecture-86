@@ -4,7 +4,7 @@ An e-commerce web application built with React, TypeScript, Vite, and Tailwind C
 
 ### Live Preview
 
-Check out the live demo here: [AwesomeBuy](https://codeyogi-lecture-86.netlify.app/)
+Check out the live demo here: [AwesomeBuy](https://codeyogi-lecture-85-86.netlify.app/)
 
 ### Implementation Notes
 
